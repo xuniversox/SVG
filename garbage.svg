@@ -1,0 +1,9 @@
+<?xml-stylesheet href="style.css" type="text/css"?>
+<?xml-stylesheet href="print.css" media="print"
+type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+<!-- ... -->
+
+ <rect class="shit" x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+</svg>

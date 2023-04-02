@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width1, initial-scale=1.0">
+    <title> Graphics </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <p> hello </p> </header>
+    <?xml-stylesheet href="style.css" type="text/css"?>
+
+    <svg xmlns="http://www.w3.org/2000/svg">
+    <!-- ... -->
+
+    <rect class="shit" x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+
+    <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+
+    <line y1="200" x2="200" stroke="pink" stroke-width="8"/>
+
+    <path fill="red"
+d="M 10,6
+Q 10,0 15,0
+T 20,6
+Q 20,10 15,14
+T 10,20
+Q 10,18 5,14
+T 0,6
+Q 0,0 5,0
+T 10,6
+Z" />
+
+<text class="shita"   x="10" y="80">DTSwiss TK540/X.9 Wheelset</text>
+<defs>
+    <path id="path-for-text" d="M60,80 Q300,0 150,180" />
+    </defs>
+    <text><textPath xlink:href="#path-for-text"
+    >Text for path</textPath></text>
+
+
+<title>Rotating Dash Links</title>
+<style type="text/css">
+svg {
+fill: none;
+stroke-linejoin: round;
+stroke-linecap: round;
+stroke-dasharray: 1px 1px;
+animation: cycle 0.5s 20 ease-in-out;
+}
+
+@keyframes cycle {
+    from { stroke-dashoffset: 0px; }
+    to { stroke-dashoffset: 2px; }
+    }
+    </style>
+    <path id="heart" stroke="darkRed"
+    d="M10,6 Q10,0 15,0T20,6Q20,10 15,14
+    T10,20Q10,18 5,14T0,6Q0,0 5,0T10,6Z" />
+    <path id="spade" stroke="#222" transform="translate(22,0)"
+    d="M9,15C9,20 0,21 0,16S6,9 10,0C14,9 20,11 20,16
+    S11,20 11,15Q11,20 13,20H7Q9,20 9,15Z" />
+
+    <title>Hover Effects that Don't Affect Hover Regions</title>
+<style>
+circle {
+fill: currentColor;
+stroke: currentColor;
+stroke-width: 0px;
+pointer-events: visibleFill;
+transition: all 0.5s;
+}
+circle:hover {
+stroke-width: 24px;
+fill-opacity: 0.3;
+}
+</style>
+<circle color="crimson" cx="75" cy="75" r="60" />
+<circle color="springGreen" cx="200" cy="125" r="60" />
+<circle color="royalBlue" cx="325" cy="75" r="60" />
+    </svg>
+</body>
+</html>
